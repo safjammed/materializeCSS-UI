@@ -1,0 +1,162 @@
+/* 
+* 
+* UI Kit for Bernardo Around
+* 
+* Developer: Safayat Jamil;
+* 
+* Website: http://safjammed.me;
+* Developed Under MIT license
+*  
+*  */
+
+body{
+	height: 100%;
+	width: 100%;
+	background-color: #25333D;
+	color: white;
+}
+body.loaded{
+	background-color: #F6F6F6;
+	transition: 1s;
+	color: #6a6969;
+}
+i.reversed {
+    transform: rotateY(180deg);
+}
+.hidden{
+	display: none;
+}
+
+nav ul a{
+	color: white;
+}
+nav{
+	background-color: #25333D;
+	transition: 1s;
+}
+
+.loaded nav{
+	background-color: #fff;
+}
+.loaded nav ul a{
+	color: #424242;
+}
+
+footer.stick-bottom {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+.accordion-inside-icon{
+	background: linear-gradient(to right, #58ce8d, #26a69a);
+  	-webkit-background-clip: text;
+  	-webkit-text-fill-color: transparent;	
+}
+button, .btn {
+    background: linear-gradient(to right, #58ce8d, #26a69a);
+}
+
+.dropdown-content li>a, .dropdown-content li>span{
+	color: #424242;
+}
+
+.no-margin{
+	margin: 0;
+}
+.no-padding{
+	padding: 0;
+}
+
+.section{
+	background-color: #25333D;
+	color: white;	
+}
+.loaded .section{
+	background-color: #fff;
+	color: #616161;	
+		transition: 1s;
+}
+
+.collapsible-header{
+	background-color: #25333D;
+	color: #fff;
+	border-bottom: 1px solid #000;
+}
+.loaded .collapsible-header{
+	background-color: #fff;
+	color: #616161;	
+		transition: 1s;
+		border-bottom: 1px solid #ddd;
+}
+.collapsible-body{
+	border-bottom: 1px solid #000;
+}
+.loaded .collapsible-body{
+	border-bottom: 1px solid #ddd;	
+}
+
+
+/* LOGIN PAGE */
+
+body{	
+	height: 100%;
+	width: 100%;
+	background-color: #25333D;
+}
+.login .center-island{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.login .left-bordered{
+	    border-left: 2px solid #8a8787;
+}
+
+/* DATATABLES */
+button.dt-button, div.dt-button, a.dt-button{
+	border: none;
+    border-radius: 2px;
+    display: inline-block;
+    height: 36px;
+    line-height: 36px;
+    padding: 0 2rem;
+    text-transform: uppercase;
+    vertical-align: middle;
+    -webkit-tap-highlight-color: transparent;
+	text-decoration: none;
+    color: #fff;
+    background-color: #26a69a;
+    text-align: center;
+    letter-spacing: .5px;
+    -webkit-transition: .2s ease-out;
+    transition: .2s ease-out;
+    cursor: pointer;
+    font-size: 1rem;
+    outline: 0;
+    background-image: none;
+}
+
+button.dt-button:hover, div.dt-button:hover, a.dt-button:hover,button.dt-button:focus, div.dt-button:focus, a.dt-button:focus,button.dt-button:active, div.dt-button:active, a.dt-button:active{
+	background-image: none !important;
+	border: none !important;
+	background-color: #2bbbad !important;
+	box-shadow: 0 3px 3px 0 rgba(0,0,0,0.14), 0 1px 7px 0 rgba(0,0,0,0.12), 0 3px 1px -1px rgba(0,0,0,0.2);
+
+}
+.dataTables_wrapper label {
+    font-size: 1.2em;
+    text-align: left;
+    float: left;
+    color: #26a69a;
+    font-weight:bold;
+}
+.btn-flat{
+	background-image: none;
+}
+.timepicker, .datepicker{
+    font-size:1.2em;
+    text-align: center;
+    font-weight:bold;
+}

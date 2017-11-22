@@ -1,0 +1,240 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Proposed UI</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="manifest" href="site.webmanifest">
+        <link rel="apple-touch-icon" href="icon.png">
+        <!-- Place favicon.ico in the root directory -->
+        
+        <link rel="stylesheet" type="text/css" href="assets/css/animate.css">
+        <link rel="stylesheet" type="text/css" href="assets/css/materialize.min.css">
+        <link rel="stylesheet" type="text/css" href="assets/css/sweetalert2.min.css">
+        <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+        <script src="assets/js/jquery.min.js"></script>                
+        <script src="assets/js/jquery-migrate.min.js"></script>                
+        <script src="assets/js/materialize.min.js"></script>
+        <script src="assets/js/wow.min.js"></script>
+        <script src="assets/js/sweetalert2.min.js"></script>
+        <script src="assets/js/main.js"></script> 
+        <script type="text/javascript">
+            $(window).on('load', function(){
+                $('body').addClass('loaded');
+                $('.account img.circle').height($('nav').height()+'px');
+            });
+        </script>
+    </head>
+<body>
+        <!--[if lte IE 9]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+        <![endif]-->
+
+        <!-- Add your site or application content here -->
+<div class="navbar-fixed">
+    <nav class="grey-text text-darken-4  z-depth-1">
+    <div class="nav-wrapper">
+        <div class="container">
+              <a href="#" class="brand-logo center grey-text text-darken-4">Logo</a>
+              <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+              <ul class="left hide-on-med-and-down grey-text text-darken-4">
+                <li><a href="sass.html">Sass</a></li>
+                <li><a href="badges.html">Components</a></li>
+                <li><a href="collapsible.html">Javascript</a></li>
+                <li><a href="mobile.html">Mobile</a></li>        
+              </ul>
+
+              <ul class="account right">
+                  <li>
+                    <img src="assets/img/yuna.jpg" alt="" class="circle">    
+                  </li>
+                  <li><a class="dropdown-button" href="#!" data-activates="dropdown1"><b>John Doe</b><i class="material-icons right">arrow_drop_down</i></a></li>
+              </ul>             
+
+              <ul class="side-nav" id="mobile-demo">
+                <li><a href="sass.html">Sass</a></li>
+                <li><a href="badges.html">Components</a></li>
+                <li><a href="collapsible.html">Javascript</a></li>
+                <li><a href="mobile.html">Mobile</a></li>
+              </ul>
+
+              <ul id="dropdown1" class="dropdown-content">
+                  <li><a href="#!">one</a></li>
+                  <li><a href="#!">two</a></li>
+                  <li class="divider"></li>
+                  <li><a href="#!">three</a></li>
+              </ul>
+        </div>      
+    </div>
+  </nav>
+</div> <!-- nav end -->
+
+<!-- WELCOME HEADER -->
+  <div class="section z-depth-1">
+    <div class="container">
+        <div class="row center">
+            <h3 class="light header teal-text">LOREM ISPUM</h3>
+            <p class="col s12 m8 offset-m2 caption">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque laoreet consequat tortor volutpat euismod. Vestibulum at aliquet libero. Vestibulum sed eros tortor. Vivamus a dictum diam, ut ultricies nulla. Pellentesque pulvinar ipsum vitae nibh dictum efficitur. </p>           
+          </div>
+    </div>          
+    </div>     
+    <!--END WELCOME HEADER -->
+
+<form id="preForm" action="results.html" method="get">    
+    <div class="container">
+        <div class="row">
+            
+              <ul class="collapsible popout" data-collapsible="accordion">
+                <li><!-- STEP 1 -->
+                  <div class="collapsible-header active"><i class="material-icons">supervisor_account</i>Step 1: Enter Number of Clients</div>
+                  <div class="collapsible-body center-align">
+                    <div class="row">
+                        <i class="material-icons medium accordion-inside-icon wow fadeInUp" data-wow-delay="0.5s">supervisor_account</i>    
+                    </div>
+                    <div class="row">
+                    <span class="flow-text wow fadeInUp">Choose The Number of Clients from Below</span>
+                    <p class="range-field wow fadeInUp">
+                      <input type="range" id="numOfClientsRange" min="50" max="10000" value="500" />
+                    </p>                    
+                    <div class="input-field col s6 offset-s3 wow fadeInUp" data-wow-delay="0.3s">
+                        <i class="material-icons prefix">textsms</i>
+                      <input value="500" id="numOfClients" type="number" min="50" max="10000">
+                      <label class="active" for="first_name2">Number of SMS</label>
+                    </div>
+                  </div>
+
+                  <a class="waves-effect waves-light btn right wow bounceInRight" onclick="$('.collapsible').collapsible('open', 1);"><i class="material-icons right">send</i>Next Step</a>
+
+                  </div>
+                </li><!-- END STEP 1 -->
+                <li> <!-- STEP 2 -->
+                  <div class="collapsible-header"><i class="material-icons">place</i>Step 2: Select Area</div>
+                  <div class="collapsible-body center-align">
+                    <div class="row">
+                        <i class="material-icons medium accordion-inside-icon wow fadeInUp" data-wow-delay="0.5s">place</i>    
+                    </div>
+                    <span class="flow-text wow fadeInUp">Select Area for the Broadcast to be sent</span>
+                    <div class="row">
+                         <div class="input-field col s6 offset-s3 wow fadeInUp">                        
+                            <select id="area" multiple required>
+                              <option value="" disabled selected>Choose your option</option>
+                              <option value="1">Option 1</option>
+                              <option value="2">Option 2</option>
+                              <option value="3">Option 3</option>
+                            </select>                        
+                          </div>                    
+                    </div>
+                    <a class="waves-effect waves-light btn left wow bounceInLeft" onclick="$('.collapsible').collapsible('open', 0);"><i class="material-icons left reversed">send</i>Previous Step</a>
+
+                    <a class="waves-effect waves-light btn right wow bounceInRight" onclick="$('.collapsible').collapsible('open', 2);"><i class="material-icons right">send</i>Next Step</a>
+                  </div>
+                </li><!-- END STEP 2 -->            
+                <li> <!-- STEP 3 -->
+                  <div class="collapsible-header"><i class="material-icons">whatshot</i>Step 3: Select Type of Broadcast</div>
+                  <div class="collapsible-body center-align">
+                    <div class="row">
+                        <i class="material-icons medium accordion-inside-icon wow fadeInUp" data-wow-delay="0.5s">whatshot</i>    
+                    </div>                
+                    <div class="row">
+                        <span class="flow-text wow fadeInUp">Select Type of Broadcast From Below</span>
+                    </div>
+
+                    <div class="row">        
+                        <div class="col m5 offset-m5 s10 offset-s2 left-align">
+                        <p class="wow fadeInRight" data-wow-delay='0s'>
+                          <input name="typeOfBroadcast" type="radio" id="test1" value='0' checked />
+                          <label for="test1">MO only</label>
+                        </p>
+                        <p class="wow fadeInRight" data-wow-delay='0.3s'>
+                          <input name="typeOfBroadcast" type="radio" id="test2" value="1" />
+                          <label for="test2" class="tooltipped" data-position="right" data-delay="50" data-tooltip="Enter URL Which Will Be Added at the End of the SMS">Short Link Enabled</label>
+                        </p>
+                        <p class="wow fadeInRight" data-wow-delay='0.6s'>
+                          <input class="with-gap" name="typeOfBroadcast" type="radio" id="test3"  value="2"/>
+                          <label for="test3" class="tooltipped" data-position="right" data-delay="50" data-tooltip="Enter URL Which Will Be Added at the End of the SMS">MO + Short Link (Both Enabled)</label>
+                        </p>  
+                        </div>
+                        
+                    </div>
+                    <a class="waves-effect waves-light btn left wow bounceInLeft" onclick="$('.collapsible').collapsible('open', 1);"><i class="material-icons left reversed">send</i>Previous Step</a>
+
+                    <!-- <a class="waves-effect waves-light btn right wow bounceIn btn-large"><i class="material-icons right">textsms</i>Go!</a> -->
+
+                    <a class="firstSubmit btn-floating btn-large waves-effect waves-light right wow bounceIn pulse"><i class="material-icons">check</i></a>
+                  </div>
+                </li><!-- END STEP 3 -->           
+              </ul>
+            
+          </div>
+        </div>
+
+<!-- URL INPUT -->
+<div id="urlmodal" class="modal">
+    <div class="modal-content">
+      <h4>Short URL <a class="modal-close waves-effect waves-green btn-flat right" href="#"><i class="material-icons">close</i></a></h4>
+      
+      <p>Type in the Short URL Below</p>
+      <div class="row">
+          <div class="input-field col m6 offset-m3">
+            <i class="material-icons prefix">insert_link</i>
+            <input id="shortURL" type="url">
+            <label for="input_text">Type/Paste URL here</label>
+          </div>
+        </div>
+    </div>
+    <div class="modal-footer">        
+      <button type="submit" id="submitFromURL" class="waves-effect waves-green btn hidden">Submit</button>  
+      <a id="nextFromURL" class="modal-action modal-close waves-effect waves-green btn-flat modal-trigger hidden" href="#smsmodal">next</a>
+    </div>
+  </div>
+
+<!-- THE SMS INPUT-->
+<div id="smsmodal" class="modal">
+    <div class="modal-content">
+      <h4>SMS Body <a class="modal-close waves-effect waves-green btn-flat right" href="#"><i class="material-icons">close</i></a></h4>
+      
+      <p>Type in the Promotional SMS Below</p>
+      <div class="row">
+          <div class="input-field col m6 offset-m3">
+            <i class="material-icons prefix">textsms</i>
+            <textarea id="sms" class="materialize-textarea" data-length="160"></textarea> 
+            <label for="sms">Type Your SMS Here</label>
+          </div>
+        </div>
+    </div>
+    <div class="modal-footer">
+      <button type="submit" class="btn waves-effect waves-green">Submit</button>  
+    </div>
+  </div>
+         </form>
+
+<div class="fixed-action-btn click-to-toggle">
+    <a class="btn-floating btn-large red">
+      <i class="large material-icons">menu</i>
+    </a>
+    <ul>
+      <li><a class="btn-floating red"><i class="material-icons">insert_chart</i></a></li>
+      <li><a class="btn-floating yellow darken-1"><i class="material-icons">format_quote</i></a></li>
+      <li><a class="btn-floating green"><i class="material-icons">publish</i></a></li>
+      <li><a class="btn-floating blue"><i class="material-icons">attach_file</i></a></li>
+    </ul>
+  </div>
+
+
+
+
+
+
+
+
+  <footer class="stick-bottom center-align grey-text">          
+          <div class="container">
+              Created with <i class="material-icons red-text">favorite</i> by <a href="https://safjammed.me"> Safayat Jamil</a>
+          </div>
+        </footer>      
+</body>
+</html>
